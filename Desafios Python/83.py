@@ -1,5 +1,5 @@
-expr = str(input('Digite a expressão: '))
-pilha = []
+expr = str(input('Digite um expressão: '))
+pilha= []
 for simb in expr:
     if simb == '(':
         pilha.append('(')
@@ -13,3 +13,4 @@ if len(pilha) == 0:
     print('Expressão válida!')
 else:
     print('Expressão inválida!')
+
