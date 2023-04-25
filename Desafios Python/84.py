@@ -3,13 +3,13 @@ pessoa_pesada = {'Nome': '', 'Peso': 0}
 pessoa_leve = {'Nome': '', 'Peso': 0}
 soma_idades = 0
 
-for control in range(2):
+for control in range(5):
     pessoa = {
         'Nome': input('Qual é o seu nome?: '),
         'Idade': int(input('Qual é a sua idade?: ')),
         'Peso': float(input('Qual é o seu peso?: '))
     }
-    print(f'Pessoa {control} foi registrada')
+    print(f'PESSOA {control+1} FOI REGISTRADA')
     soma_idades = pessoa['Idade']
     pessoas.append(pessoa)
     if pessoa['Peso'] > pessoa_pesada['Peso']:
