@@ -17,8 +17,8 @@ for i in range(1, 5):
     sleep(0.5)
 
 print('-'*30)
-
 print('Ranking dos Jogadores:')
+print('-'*30)
 
 jogadores = sorted(
     jogadores.values(),
@@ -26,4 +26,4 @@ jogadores = sorted(
     reverse=True)
 for i, jogador in enumerate(jogadores):
     print(f'{i+1}º lugar: Jogador {jogador["jogador"]} com {jogador["dado"]}')
-
+print('-='*15)
