@@ -14,3 +14,7 @@ def dobro(preco):
 
 def metade(preco):
     return preco/2
+
+def formatacao(preco):
+   return f'R${preco:.2f}'.replace('.',',')
+
