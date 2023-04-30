@@ -1,3 +1,6 @@
+from time import sleep
+
+
 def aumentar(preco, porcentagem, format=False):
     aumentado = preco + preco/100 * porcentagem
     if format == True:
@@ -39,6 +42,16 @@ def resumo(preco,porcent_aumento,porcent_diminuicao):
     print(f'Metade do preço:        {(metade(preco,True))}')
     print(f'{porcent_aumento}% de aumento:         {(aumentar(preco,porcent_aumento,True))}')
     print(f'{porcent_diminuicao}% de reducao:          {(aumentar(preco,porcent_diminuicao,True))}')
+
+def verificar():
+    while True:
+        try:
+            p = float(input('Digite o preço: R$'))
+            break
+        except ValueError:
+            print('Digite um valor válido!')
+            sleep(0.3)
+    return p
 
     
 
