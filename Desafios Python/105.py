@@ -1,3 +1,6 @@
+import os
+from time import sleep
+
 def notas(*n, sit=False):
 
     dados = {
@@ -21,3 +24,8 @@ def notas(*n, sit=False):
 
 resp = notas(7.5, 9.5, 10, 6.5, sit=True)
 print(resp)
+
+
+sleep(3)
+
+os.system('cls' if os.name == 'nt' else 'clear')
