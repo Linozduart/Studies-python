@@ -34,7 +34,7 @@ else:
 
 
 """
-
+slk
 lower() e upper(): convertem a string para letras minúsculas ou maiúsculas, respectivamente.
 strip(), lstrip() e rstrip(): removem espaços em branco do início, do fim ou dos dois lados da string, respectivamente.
 replace(old, new): substitui todas as ocorrências de old por new na string.
